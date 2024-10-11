@@ -12,15 +12,14 @@ n = int(input().strip())
 w = "Weird"
 not_w = "Not Weird"
 
-# Check the conditions based on the value of n
-if (n%2) != 0: # If n is odd
+if (n%2) != 0:
     print(w)
-else:
-    if 2 <= n <= 5: # If n is even and in the range of 2 to 5
+else: 
+    if 2 <= n <= 5: 
         print(not_w)
-    elif 6 <= n <= 20: # If n is even and in the range of 6 to 20
+    elif 6 <= n <= 20: 
         print(w)
-    elif n > 20: # If n is even and greater than 20
+    elif n > 20: 
         print(not_w)
 
 ######################
@@ -329,7 +328,6 @@ for i in range(center_line, n):
 ###################
 def print_formatted(number):
     
-    # Determine the width for formatting
     # -2 to ignore '0b' prefix
     width = len(bin(number)) - 2  
     
@@ -340,7 +338,6 @@ def print_formatted(number):
         hexadecimal = hex(i)[2:].upper().rjust(width)  # Remove '0x' prefix and capitalize
         binary = bin(i)[2:].rjust(width)  # Remove '0b' prefix
 
-        # Print formatted line
         print(f"{decimal} {octal} {hexadecimal} {binary}")
 
 n = int(input())
@@ -395,8 +392,8 @@ fptr.close()
 #################
 def minion_game(string):
     l = len(string)
-    k_points = 0  # Points for Kevin (vowels)
-    s_points = 0  # Points for Stuart (consonants)
+    k_points = 0  
+    s_points = 0  
 
     for i in range(l):
         # Points are determined by how many substrings start from index i
