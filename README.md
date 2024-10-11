@@ -1,4 +1,4 @@
-# HackerRank Python Submissions
+# HackerRank Python
 
 This repository contains the following files:
 * `scripts.py`: a .py file that contains the solutions for each exercise.
